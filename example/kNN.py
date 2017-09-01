@@ -2,7 +2,19 @@
 # --author:dennychen
 # --date:2017.07.10
 #  kNN demo
-#  
+#  1.计算所有类别与未知类别的距离,并按升序排列.
+#  2.找到k个最靠近未知类别的类型（少数服从多数），来决定未知类别的类别。
+#  main function:tile
+    #b = np.array([[1, 2], [3, 4]])
+	# np.tile(b, 2)
+	# array([[1, 2, 1, 2],
+	#         [3, 4, 3, 4]])
+	# np.tile(b, (2, 1))
+	# array([[1, 2],
+	#        [3, 4],
+	#        [1, 2],
+	#        [3, 4]])
+	
 import numpy as np
 import operator
 
